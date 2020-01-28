@@ -5,7 +5,6 @@ include('config.php');
 if (isset($_POST['btn']))
 {
 echo "Dear, ".$_POST['name']." your are welcome".'<br>';	
-echo $_POST['id'];
 
 $username = $_POST['name'];
 

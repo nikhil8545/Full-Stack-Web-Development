@@ -6,10 +6,14 @@ if (isset($_POST['btn']))
 {
 echo "Dear, ".$_POST['name']." your details are".'<br>';	
 echo $_POST['id'].'<br>';
-echo $_POST['name'].'<br>';
-echo $_POST['age'].'<br>';
-echo $_POST['contact'].'<br>';
-echo $_POST['email'].'<br>';
+//echo $_POST['name'].'<br>';
+$username = $_POST['name'].'<br>';
+//echo $_POST['age'].'<br>';
+$age = $_POST['age'].'<br>';
+//echo $_POST['contact'].'<br>';
+$contact = $_POST['contact'].'<br>';
+//echo $_POST['email'].'<br>';
+$email = $_POST['email'].'<br>';
 }
 ?>
 <html>
@@ -18,7 +22,7 @@ echo $_POST['email'].'<br>';
 	</head>
 
 	<body>
-	<form action="phpInput.php" method="post">
+	<form action="detail.php" method="post">
 		ID: <input name="id", type="text"
 		placeholder="Enter ID"><br>
 		Name: <input type="text" name="name"><br>

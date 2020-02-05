@@ -22,7 +22,7 @@ if (isset($_POST['btn']))
 		Name: <input type="text" name="name" placeholder="Enter name"><br>
 		Age:<input type="text" name="age" placeholder="Enter Age"><br>
 		Contact:<input type="text" name="contact" placeholder="Enter contact"><br> 
-		email:<input type="text" name="email" placeholder="Enter email"><br>
+		email:<input type="email" name="email" placeholder="Enter email"><br>
 		<input type="submit" name='btn'>
 		</form>
 		</body>

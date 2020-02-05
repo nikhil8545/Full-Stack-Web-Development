@@ -23,6 +23,8 @@ if($result->num_rows > 0){
 			<th>Age</th>
 			<th>Contact</th>
 			<th>Email</th>
+			<th>Edit</th>
+			<th>Delete</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -35,6 +37,8 @@ if($result->num_rows > 0){
 			<td><?php echo $data['age'] ?></td>
 			<td><?php echo $data['contact'] ?></td>
 			<td><?php echo $data['email'] ?></td>
+			<td><a href="edit.php?id="<?php echo $data['id'];?>">Edit</a></td>
+			<td>Delete</td>
 		</tr>
 	<?php } ?>
 	</tbody>

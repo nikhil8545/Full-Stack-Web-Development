@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title> Change of Image</title>
+	<style = type="text/css"></style>
+</head>
+<body>
+	<img src="1.jpg" id="img" width="200px" height="300px">
+	<input type="button" value="Next" id="toggle">
+	<script type="text/javascript">
+		
+		document.getElementById('toggle').onclick = function(){
+			nextprevious=document.getElementById('toggle').value;
+			if(nextprevious=='Next') {
+				document.getElementById('img').src="1.jpg";
+				document.getElementById('toggle').value='Previous';
+			}
+			else
+			{
+				document.getElementById('img').src="2.jpg";
+				document.getElementById('toggle').value='Next';
+			}
+		}
+	</script>
+</body>
+</html>

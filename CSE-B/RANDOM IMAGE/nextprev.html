@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title> Change of Image</title>
+</head>
+<body>
+	<img src="1.jpg" id="img" width="200px" height="300px">
+	<input type="button" value="Next" id="next">
+	<input type="button" value="Pervious" id="previous">
+	<script type="text/javascript">
+		
+		document.getElementById('next').onclick = function(){
+			document.getElementById('img').src="1.jpg";
+		}
+
+		document.getElementById('previous').onclick = function(){
+			document.getElementById('img').src="2.jpg";
+		}
+	</script>
+</body>
+</html>

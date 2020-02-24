@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Random Image Generation</title>
+	<style type="text/css"></style>
+</head>
+<body>
+		<img src="1.jpg" width="200px" height="300px">
+		<input type="button" value="Change Image" id="btn">
+		<script type="text/javascript">
+		function randomImageGeneration(){
+			random = 1 + Math.ceil(Math.random()*3);
+			return random;
+		}
+
+		document.getElementById('btn').onclick = function(){
+			var imageName = randomImageGeneration();
+			document.getElementById('img').src=imageName+'.jpg';
+		}
+	</script>
+</body>
+</html>
